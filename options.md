@@ -267,3 +267,7 @@
         <td>抑制在严格模式中或者在构造器中使用<code>this<code>时可能产生的警告信息。</td>
     </tr>
 </table>
+
+> 烂尾了，更多信息查看官方文档。
+
+http://www.jshint.com/docs/options/#environments
