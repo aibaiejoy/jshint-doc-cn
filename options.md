@@ -151,3 +151,119 @@
         </tr>
     </tbody>
 </table>
+
+## Relaxing options
+
+设置为 true 是，以下选项会让 JSHint 处理你的代码时生成更少的警告。
+
+<table>
+    <tr>
+        <td><code>asi</code></td>
+        <td>
+            这个选项用于抑制缺少分号的警告。JavaScript 的分号机制并不是特别严格。<br>参考阅读：
+            http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding<br>http://inimino.org/~inimino/blog/javascript_semicolons            
+        </td>
+    </tr>
+    <tr>
+        <td><code>boss</code></td>
+        <td>
+        这个选项抑制某些可能正确的警告信息。
+        </td>
+    </tr>
+    <tr>
+        <td><code>debug</code></td>
+        <td>这个选项用于抑制使用 <code>debugger</code> 的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>eqnull</code></td>
+        <td>这个选项用于抑制 <code>==null</code> 比较的警告信息。比如通常检测某个变量是不是 <code>null</code> 或者 <code>undefined</code>。</td>
+    </tr>
+    <tr>
+        <td><code>esnext</code></td>
+        <td>这个选项用于告诉 JSHint，在你的代码中使用了 ES 6 中的语法。但是 ES6 还没发布，并不是所有浏览器都实现了。<br> 参考阅读：</br>http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts</td>
+    </tr>
+    <tr>
+        <td><code>evil</code></td>
+        <td>这个选项用于抑制使用 <code>eval</code> 时的警告信息。eval 要谨慎使用。</td>
+    </tr>
+    <tr>
+        <td><code>expr</code></td>
+        <td>这个选项用于抑制表达式相关的一些错误信息。</td>
+    </tr>
+    <tr>
+        <td><code>funcscope</code></td>
+        <td>这个选项用于抑制在控制结构中声明变量在外部访问这些变量的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>gcl</code></td>
+        <td>让 JSHint 与 Goggle Closure Compiler 兼容的选项</td>
+    </tr>
+    <tr>
+        <td><code>globalstrict</code></td>
+        <td>这个选项抑制全局使用严格模式的警告信息</td>
+    </tr>
+    <tr>
+        <td><code>iderator</code></td>
+        <td>这个选项用于抑制使用诸如 <code>__iterator__</code> 属性的警告信息。因为这类属性并非所有浏览器支持，应该谨慎使用<td>        
+    </tr>
+    <tr>
+        <td><code>lastsemic</code></td>
+        <td>这个选项用于抑制分号缺省的警告，单仅仅是在语句最后的分号缺省的时候不发出警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>laxbreak</code></td>
+        <td>这个选项抑制大多数代码中可能存在不安全的代码的警告。</td>
+    </tr>
+    <tr>
+        <td><code>laxcomma</code></td>
+        <td>这个选项用于抑制逗号前置的编码风格相关的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>loopfunc</code></td>
+        <td>这个选项用于抑制循环中有函数的警告信息。在循环内定义函数可能导致 bug</td>
+    </tr>
+    <tr>
+        <td><code>maxerr</code></td>
+        <td>这个选项允许设置警告信息的最大数量。默认为 50</td>        
+    </tr>
+    <tr>
+        <td><code>moz</code></td>
+        <td>告诉 JSHint 代码使用了 Mozilla JavaScript 扩展。https://developer.mozilla.org/en-US/docs/JavaScript/New_in_JavaScript/1.7</td>        
+    </tr>
+    <tr>
+        <td><code>multistr</code></td>
+        <td>这个选项用于抑制使用多行字符串时的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>notypeof</code></td>
+        <td>抑制使用 typeof 运算符的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>proto</code></td>
+        <td>抑制使用 <code>__proto__</code> 属性的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>scripturl</code></td>
+        <td>抑制使用诸如<code>javascript:..</code>的错误信息。</td>
+    </tr>
+    <tr>
+        <td><code>smarttabs</code></td>
+        <td>抑制混合使用 tabs 和空格的警告信息。</td>
+    </tr>
+    <tr>
+        <td><code>shadow</code></td>
+        <td>抑制变量阴影的警告，比如声明已经在外部声明的变量。</td>
+    </tr>
+    <tr>
+        <td><code>sub</code></td>
+        <td>抑制可以使用点表示法而使用[]表示法的错误信息。</td>
+    </tr>
+    <tr>
+        <td><code>supernew</code></td>
+        <td>抑制怪异的使用构造器，诸如 <code>new function() {...}</code>产生的警告信息</td>
+    </tr>
+    <tr>
+        <td><code>validthis</code></td>
+        <td>抑制在严格模式中或者在构造器中使用<code>this<code>时可能产生的警告信息。</td>
+    </tr>
+</table>
