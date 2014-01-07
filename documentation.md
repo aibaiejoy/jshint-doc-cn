@@ -2,7 +2,7 @@
 
 JSHint 是一个用来标记使用 JavaScript 编写的程序中可疑用法的程序。 核心项目包含库本身，以及一个作为 Node 模块发布的 CLI 程序。
 
-更多的文档请参考：[JSHint 选项列表](jshint-options.md)，[CLI flags](CLI-flags.md)，[编写自己的 reporter](write-own-reporter)，[常见问题](faq.md)。
+更多的文档请参考：[JSHint 选项列表](options.md)，[CLI flags](cli-flags.md)，[编写自己的 reporter](write-own-reporter.md)，[常见问题](faq.md)。
 
 ## 基本用法
 
